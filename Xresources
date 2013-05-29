@@ -1,0 +1,39 @@
+*background: #1f1f1b
+*foreground: #C2BFB8
+*color0:     #1f1f1b
+*color1:     #ad4d3d
+*color2:     #77A840
+*color3:     #C2B744
+*color4:     #4E7394
+*color5:     #A85DA2
+*color6:     #5FA6AD
+*color7:     #9e9c96
+*color8:     #555753
+*color9:     #914031
+*color10:    #67993C
+*color11:    #9C9230
+*color12:    #38518C
+*color13:    #8C4D87
+*color14:    #5C9499
+*color15:    #9f9f9f
+
+URxvt.depth: 32
+URxvt.font:xft:DejaVu Sans Mono for Powerline:size=10
+
+Xft.autohint: 0
+Xft.lcdfilter: lcddefault
+Xft.rgba: rgb
+Xft.hinting: 1
+Xft.hintstyle: hintfull
+Xft.antialias: 1
+
+URxvt.internalBorder:0
+URxvt.scrollBar: off
+URxvt.urgentOnBell: true
+URxvt.visualBell: true
+
+URxvt.saveLines:10000
+
+URxvt.perl-ext-common: default,matcher
+URxvt.url-launcher: google-chrome
+URxvt.matcher.button: 1

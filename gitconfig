@@ -1,0 +1,9 @@
+[color]
+	ui = true
+[core]
+	editor = vim
+[user]
+	name = Stephen Drodge
+	email = stephen.drodge@gmail.com
+[push]
+	default = simple
