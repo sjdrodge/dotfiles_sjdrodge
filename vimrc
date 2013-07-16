@@ -1,3 +1,5 @@
+runtime bundle/vim-pathogen/autoload/pathogen.vim
+
 "disable formatting when pasting
 set pastetoggle=<F2>
 "no vim compatibility
