@@ -85,19 +85,17 @@ let $PYTHONPATH="/usr/lib/python3.3/site-packages"
 " set number line counting
 set number
 
-" set colorscheme
-"colorscheme darkblue
-"colorscheme wombat
-"colorscheme grb256
-colorscheme neverland
-"colorscheme distinguished
-"colorscheme solarized
-"colorscheme jellybeans
-
 " set backupdir
 set backupdir=/tmp
 set directory=/tmp
+
 " plugins
+" indent-guides
+let g:indent_guides_enable_on_vim_startup = 1
+let g:indent_guides_guide_size = 1
+let g:indent_guides_auto_colors = 0
+autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  ctermbg=237
+autocmd VimEnter,Colorscheme * :hi IndentGuidesEven ctermbg=239
 " pydiction
 let g:pydiction_location = '/usr/share/pydiction/complete-dict'
 "vim-latexsuite
@@ -118,3 +116,6 @@ vnoremap <silent> <C-s> <esc><esc>:w<CR>
 vnoremap <S-s> :sort<CR>
 vnoremap < <gv
 vnoremap > >gv
+
+" set colorcheme
+colorscheme neverland
