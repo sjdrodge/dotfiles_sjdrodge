@@ -58,8 +58,8 @@ set showmatch           " show matching brackets (),{},[]
 set mat=5               " show mathine brackets for 0.5 seconds
 "copy/pasting for intend
 vmap <c-y> y:call system("xclip -i", getreg("\""))<CR>
-nmap <c-v> :call setreg("\"",system("xclip -o"))<CR>p
-imap <c-v> <Esc><c-v>a
+nmap <c-p> :call setreg("\"",system("xclip -o"))<CR>p
+imap <c-p> <Esc><c-p>a
 "remap those omnimenu keys
 function! OmniPopup(action)
     if pumvisible()
