@@ -1,2 +1,7 @@
 export PATH="$HOME/bin:$HOME/.cabal/bin:$PATH"
 export EDITOR="vim"
+
+VLESS=$(find /usr/share/vim -name 'less.sh')
+if [[ ! -z $VLESS ]]; then
+  alias less=$VLESS
+fi
