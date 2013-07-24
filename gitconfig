@@ -7,3 +7,5 @@
 	email = stephen.drodge@gmail.com
 [push]
 	default = simple
+[merge]
+	toll = vimdiff
