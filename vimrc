@@ -115,5 +115,7 @@ vnoremap <S-s> :sort<CR>
 vnoremap < <gv
 vnoremap > >gv
 
+cmap w!! w !sudo tee > /dev/null %
+
 " set colorcheme
 colorscheme neverland
