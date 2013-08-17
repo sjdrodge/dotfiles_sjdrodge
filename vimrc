@@ -97,7 +97,7 @@ autocmd VimEnter,Colorscheme * :hi IndentGuidesEven ctermbg=239
 " pydiction
 let g:pydiction_location = '/usr/share/pydiction/complete-dict'
 "vim-latexsuite
-set grepprg=grep\ -nH\ $*
+set grepprg=ack
 let g:tex_flavor ="latex"
 " mappings
 "
