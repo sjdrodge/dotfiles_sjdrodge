@@ -78,11 +78,7 @@ inoremap <silent>k <C-R>=OmniPopup('k')<CR>
 set laststatus=2 " Always show the statusline
 set encoding=utf-8 " Necessary to show Unicode glyphs
 set t_Co=256
-"set guifont=Dejavu\ Sans\ Mono\ for\ Powerline\ 8
 set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ 7
-let g:Powerline_symbols='fancy'
-let g:Powerline_cache_dir="/tmp"
-let $PYTHONPATH="/usr/lib/python3.3/site-packages"
 
 " set number line counting
 set number
