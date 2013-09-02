@@ -1,4 +1,4 @@
-export PATH="$HOME/bin:$HOME/.cabal/bin:$PATH"
+export PATH="$HOME/bin:$HOME/.cabal/bin:$(gem env gempath):$PATH"
 export EDITOR="vim"
 
 VLESS=$(find /usr/share/vim -name 'less.sh')
