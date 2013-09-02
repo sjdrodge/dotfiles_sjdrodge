@@ -1,6 +1,10 @@
 export PATH="$HOME/bin:$HOME/.cabal/bin:$(gem env gempath):$PATH"
 export EDITOR="vim"
 
+function venv () {
+source ~/.venv/$1/bin/activate
+}
+
 VLESS=$(find /usr/share/vim -name 'less.sh')
 if [[ ! -z $VLESS ]]; then
   alias less=$VLESS
