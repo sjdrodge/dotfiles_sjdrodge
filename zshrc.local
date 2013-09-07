@@ -1,6 +1,8 @@
 export PATH="$HOME/bin:$HOME/.cabal/bin:$(gem env gempath):$PATH"
 export EDITOR="vim"
 
+set -o vi
+
 function venv () {
 source ~/.venv/$1/bin/activate
 }
