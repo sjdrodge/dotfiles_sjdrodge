@@ -1,5 +1,3 @@
-runtime bundle/vim-pathogen/autoload/pathogen.vim
-
 "disable formatting when pasting
 set pastetoggle=<F2>
 "no vim compatibility
@@ -15,21 +13,31 @@ set ruler		" show the cursor position all the time
 set showcmd		" display incomplete commands
 set incsearch		" do incremental searching
 
-" Don't use Ex mode, use Q for formatting
-map Q gq
-map Q gqap
-
 " CTRL-U in insert mode deletes a lot.  Use CTRL-G u to first break undo,
 " so that you can undo CTRL-U after inserting a line break.
 inoremap <C-U> <C-G>u<C-U>
 
 " because mouse is mainstream
 set mouse=a
-"syntax highlightning
-"pathogen
+
+" Vundle
 filetype off
-execute pathogen#infect()
+
+set rtp+=~/.vim/bundle/vundle
+call vundle#rc()
+
+Bundle 'gmarik/vundle'
+
+Bundle 'tpope/vim-fugitive'
+Bundle 'tpope/vim-surround'
+Bundle 'wincent/Command-T'
+Bundle 'tomtom/tcomment_vim'
+Bundle 'nathanaelkane/vim-indent-guides'
+Bundle 'Valloric/YouCompleteMe'
+Bundle 'scrooloose/syntastic'
+
 filetype plugin indent on
+
 syntax on
 set ofu=syntaxcomplete#Complete
 set hlsearch
@@ -87,33 +95,17 @@ set number
 set backupdir=/tmp
 set directory=/tmp
 
-" plugins
 " indent-guides
 let g:indent_guides_enable_on_vim_startup = 1
 let g:indent_guides_guide_size = 1
 let g:indent_guides_auto_colors = 0
 autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  ctermbg=237
 autocmd VimEnter,Colorscheme * :hi IndentGuidesEven ctermbg=239
-" pydiction
-let g:pydiction_location = '/usr/share/pydiction/complete-dict'
-"vim-latexsuite
 set grepprg=ack
-let g:tex_flavor ="latex"
-" mappings
-"
-map <C-j> <C-w>j
-map <C-k> <C-w>k
-map <C-l> <C-w>l
-map <C-h> <C-w>h
-" implementet with buftabs
+nnoremap <leader>jd :YcmCompleter GoToDefinitionElseDeclaration<CR>
+
 map <C-n> <esc>:bnext<CR>
 map <C-m> <esc>:bprevious<CR>
-noremap <silent> <C-s> :w<CR>
-inoremap <silent> <C-s> <esc><esc>:w<CR>
-vnoremap <silent> <C-s> <esc><esc>:w<CR>
-vnoremap <S-s> :sort<CR>
-vnoremap < <gv
-vnoremap > >gv
 
 cmap w!! w !sudo tee > /dev/null %
 
