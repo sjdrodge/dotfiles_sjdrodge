@@ -4,7 +4,7 @@ fi
 export PATH="$HOME/bin:$HOME/.cabal/bin:$PATH"
 export EDITOR="vim"
 
-set -o vi
+bindkey -v
 
 function venv () {
 source ~/.venv/$1/bin/activate
