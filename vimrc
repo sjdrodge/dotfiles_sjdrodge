@@ -46,6 +46,7 @@ set noerrorbells
 set mouse=a
 
 set laststatus=2
+set noshowmode
 set encoding=utf-8
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
