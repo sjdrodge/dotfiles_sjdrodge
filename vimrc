@@ -92,6 +92,8 @@ set shiftwidth=2
 set shiftround
 set expandtab
 
+au Filetype haskell setl ts=4 sw=4 sts=4
+
 set autoindent
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
