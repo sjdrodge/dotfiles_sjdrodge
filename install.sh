@@ -1,6 +1,7 @@
 #!/bin/bash
 
 #TODO: create a symlink/cp flag (both options would be nice)
+#TODO: Fix cp symlink/directory bugs
 
 #TODO: find the dir correctly
 dir=~/src/dotfiles_tehminkeh
@@ -23,7 +24,8 @@ for file in * ;do
   else
     if [ -e ~/.$file ] ;then
       echo Backing up "~/.$file" as "$bkup_dir/$file"
-      mv ~/.$file $bkup_dir/$file
+      cp -r ~/.$file $bkup_dir/$file
+      rm -r ~/.$file
     fi
     echo Installing "$file" as "~/.$file"
     ln -T -s $dir/$file ~/.$file

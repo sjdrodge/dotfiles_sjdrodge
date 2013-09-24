@@ -49,6 +49,9 @@ set laststatus=2
 set noshowmode
 set encoding=utf-8
 
+set guioptions-=T "Remove toolbar
+set guioptions-=r "Remove right side scrollbar
+
 if ! has('gui_running')
   set ttimeoutlen=10
   augroup FastEscape
@@ -76,7 +79,7 @@ syntax on
 colorscheme neverland
 
 set t_Co=256
-set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ 7
+set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ 9
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Linewrap, tabs and indentation
