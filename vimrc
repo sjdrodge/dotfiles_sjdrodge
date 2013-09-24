@@ -127,3 +127,6 @@ let g:indent_guides_guide_size = 1
 let g:indent_guides_auto_colors = 0
 autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  ctermbg=237
 autocmd VimEnter,Colorscheme * :hi IndentGuidesEven ctermbg=239
+
+let g:syntastic_error_symbol='✗'
+let g:syntastic_warning_symbol='⚠'
