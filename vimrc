@@ -49,6 +49,15 @@ set laststatus=2
 set noshowmode
 set encoding=utf-8
 
+if ! has('gui_running')
+  set ttimeoutlen=10
+  augroup FastEscape
+    autocmd!
+    au InsertEnter * set timeoutlen=0
+    au InsertLeave * set timeoutlen=1000
+  augroup END
+endif
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Files, backups, and undo
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
