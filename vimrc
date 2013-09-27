@@ -13,13 +13,14 @@ call vundle#rc()
 
 Bundle 'gmarik/vundle'
 
+Bundle 'Valloric/YouCompleteMe'
+Bundle 'nathanaelkane/vim-indent-guides'
+Bundle 'scrooloose/syntastic'
+Bundle 'tomtom/tcomment_vim'
 Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-surround'
+Bundle 'tpope/vim-unimpaired'
 Bundle 'wincent/Command-T'
-Bundle 'tomtom/tcomment_vim'
-Bundle 'nathanaelkane/vim-indent-guides'
-Bundle 'Valloric/YouCompleteMe'
-Bundle 'scrooloose/syntastic'
 
 filetype plugin indent on
 
