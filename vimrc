@@ -111,9 +111,6 @@ inoremap <C-U> <C-G>u<C-U>
 
 nnoremap <leader>jd :YcmCompleter GoToDefinitionElseDeclaration<CR>
 
-map <C-n> <esc>:bnext<CR>
-map <C-m> <esc>:bprevious<CR>
-
 nmap <C-j> <C-w>j
 nmap <C-k> <C-w>k
 nmap <C-h> <C-w>h
