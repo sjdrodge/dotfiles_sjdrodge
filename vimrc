@@ -28,6 +28,7 @@ filetype plugin indent on
 " => User interface
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set shortmess+=I
+set title
 
 set ruler
 set showcmd
