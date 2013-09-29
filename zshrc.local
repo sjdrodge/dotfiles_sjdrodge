@@ -4,6 +4,9 @@ fi
 export PATH="$HOME/bin:$HOME/.cabal/bin:$PATH"
 export EDITOR="vim"
 
+alias arst='setxkbmap "us"'
+alias asdf='setxkbmap "us(colemak)"'
+
 bindkey -v
 
 function venv () {
