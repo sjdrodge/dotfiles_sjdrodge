@@ -13,6 +13,7 @@ call vundle#rc()
 
 Bundle 'gmarik/vundle'
 
+Bundle 'Floobits/floobits-vim'
 Bundle 'Valloric/YouCompleteMe'
 Bundle 'nathanaelkane/vim-indent-guides'
 Bundle 'scrooloose/syntastic'
@@ -133,3 +134,5 @@ autocmd VimEnter,Colorscheme * :hi IndentGuidesEven ctermbg=239
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_error_symbol='✗'
 let g:syntastic_warning_symbol='⚠'
+
+let g:ycm_allow_changing_updatetime = 0
