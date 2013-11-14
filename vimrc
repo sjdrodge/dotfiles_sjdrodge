@@ -49,6 +49,7 @@ set mat=2
 set noerrorbells
 set mouse=a
 
+set wildmenu
 set laststatus=2
 set noshowmode
 set encoding=utf-8
