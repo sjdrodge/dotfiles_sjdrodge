@@ -87,7 +87,7 @@ set t_Co=256
 set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ 9
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Linewrap, tabs and indentation
+" => Whitespace
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set wrap
 set textwidth=0
@@ -102,7 +102,12 @@ set expandtab
 
 au Filetype haskell setl ts=4 sw=4 sts=4
 
-set autoindent
+highlight ExtraWhitespace ctermbg=red guibg=red
+match ExtraWhitespace /\s\+$/
+autocmd BufWinEnter * match ExtraWhitespace /\s\+$/
+autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
+autocmd InsertLeave * match ExtraWhitespace /\s\+$/
+autocmd BufWinLeave * call clearmatches()
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Keyboard remappings
