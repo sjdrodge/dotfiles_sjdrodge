@@ -24,6 +24,7 @@ Bundle 'tpope/vim-repeat'
 Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-unimpaired'
 Bundle 'wincent/Command-T'
+Bundle 'junegunn/vim-easy-align'
 
 filetype plugin indent on
 
@@ -120,6 +121,8 @@ set pastetoggle=<F2>
 inoremap <C-U> <C-G>u<C-U>
 
 nnoremap <leader>jd :YcmCompleter GoToDefinitionElseDeclaration<CR>
+vnoremap <leader>a  :EasyAlign<CR>
+vnoremap <leader><CR>  :LiveEasyAlign<CR>
 
 nmap <C-j> <C-w>j
 nmap <C-k> <C-w>k
