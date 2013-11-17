@@ -13,7 +13,7 @@ call vundle#rc()
 
 Bundle 'gmarik/vundle'
 
-Bundle 'Floobits/floobits-vim'
+" Bundle 'Floobits/floobits-vim'
 Bundle 'Valloric/YouCompleteMe'
 Bundle 'dag/vim2hs'
 Bundle 'nathanaelkane/vim-indent-guides'
