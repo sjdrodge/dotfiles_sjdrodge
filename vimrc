@@ -15,6 +15,7 @@ Bundle 'gmarik/vundle'
 
 Bundle 'Floobits/floobits-vim'
 Bundle 'Valloric/YouCompleteMe'
+Bundle 'dag/vim2hs'
 Bundle 'nathanaelkane/vim-indent-guides'
 Bundle 'scrooloose/syntastic'
 Bundle 'tomtom/tcomment_vim'
@@ -144,3 +145,6 @@ let g:syntastic_warning_symbol='⚠'
 let g:syntastic_haskell_checkers=['ghc_mod', 'hlint']
 
 let g:ycm_allow_changing_updatetime = 0
+
+let g:haskell_conceal_enumerations = 0
+" let g:haskell_conceal_wide = 1
