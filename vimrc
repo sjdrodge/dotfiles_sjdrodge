@@ -142,9 +142,10 @@ let g:indent_guides_auto_colors = 0
 autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  ctermbg=237
 autocmd VimEnter,Colorscheme * :hi IndentGuidesEven ctermbg=239
 
+let g:syntastic_auto_loc_list = 1
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_error_symbol='✗'
-let g:syntastic_warning_symbol='⚠'
+let g:syntastic_warning_symbol='!'
 let g:syntastic_haskell_checkers=['ghc_mod', 'hlint']
 
 let g:ycm_allow_changing_updatetime = 0
