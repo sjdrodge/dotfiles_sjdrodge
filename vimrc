@@ -18,6 +18,7 @@ Bundle 'Valloric/YouCompleteMe'
 Bundle 'dag/vim2hs'
 Bundle 'idris-hackers/idris-vim'
 Bundle 'junegunn/vim-easy-align'
+Bundle 'kien/ctrlp.vim'
 Bundle 'nathanaelkane/vim-indent-guides'
 Bundle 'scrooloose/syntastic'
 Bundle 'tomtom/tcomment_vim'
@@ -28,7 +29,6 @@ Bundle 'tpope/vim-repeat'
 Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-unimpaired'
 Bundle 'trapd00r/neverland-vim-theme'
-Bundle 'wincent/Command-T'
 
 filetype plugin indent on
 
