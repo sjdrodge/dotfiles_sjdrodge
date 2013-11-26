@@ -27,6 +27,7 @@ Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-repeat'
 Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-unimpaired'
+Bundle 'trapd00r/neverland-vim-theme'
 Bundle 'wincent/Command-T'
 
 filetype plugin indent on
