@@ -15,6 +15,7 @@ Bundle 'gmarik/vundle'
 
 " Bundle 'Floobits/floobits-vim'
 Bundle 'Valloric/YouCompleteMe'
+Bundle 'terryma/vim-multiple-cursors'
 Bundle 'dag/vim2hs'
 Bundle 'idris-hackers/idris-vim'
 Bundle 'junegunn/vim-easy-align'
