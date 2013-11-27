@@ -125,6 +125,9 @@ set pastetoggle=<F2>
 " so that you can undo CTRL-U after inserting a line break.
 inoremap <C-U> <C-G>u<C-U>
 
+nnoremap <C-s> :w<CR>
+inoremap <C-s> <C-o>:w<CR>
+
 nnoremap <leader>jd :YcmCompleter GoToDefinitionElseDeclaration<CR>
 vnoremap <leader>a  :EasyAlign<CR>
 vnoremap <leader><CR>  :LiveEasyAlign<CR>

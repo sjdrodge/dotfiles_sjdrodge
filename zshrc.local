@@ -7,6 +7,14 @@ export EDITOR="vim"
 alias arst='setxkbmap "us"'
 alias asdf='setxkbmap "us(colemak)"'
 
+vim()
+{
+  local STTYOPTS="$(stty --save)"
+  stty stop '' -ixoff
+  command vim "$@"
+  stty "$STTYOPTS"
+}
+
 bindkey -v
 
 function venv () {
