@@ -86,6 +86,8 @@ set backup
 set backupdir=/tmp
 set directory=/tmp
 
+set wildignore+=*.ibc,*.o,*.hi,*.pyc,*.so
+
 set history=700
 set undolevels=700
 
