@@ -13,15 +13,18 @@ call vundle#rc()
 
 Bundle 'gmarik/vundle'
 
-" Bundle 'Floobits/floobits-vim'
-Bundle 'Valloric/YouCompleteMe'
 Bundle 'christoomey/vim-tmux-navigator'
 Bundle 'dag/vim2hs'
+Bundle 'eagletmt/ghcmod-vim'
+Bundle 'eagletmt/neco-ghc'
+" Bundle 'Floobits/floobits-vim'
 Bundle 'idris-hackers/idris-vim'
 Bundle 'junegunn/vim-easy-align'
 Bundle 'kien/ctrlp.vim'
 Bundle 'nathanaelkane/vim-indent-guides'
 Bundle 'scrooloose/syntastic'
+Bundle 'Shougo/neocomplete.vim'
+Bundle 'Shougo/vimproc.vim'
 Bundle 'terryma/vim-multiple-cursors'
 Bundle 'tomtom/tcomment_vim'
 Bundle 'tpope/vim-abolish'
@@ -161,3 +164,8 @@ let g:ycm_allow_changing_updatetime = 0
 
 let g:haskell_conceal_enumerations = 0
 " let g:haskell_conceal_wide = 1
+
+let g:neocomplete#enable_at_startup = 1
+let g:neocomplete#enable_fuzzy_completion = 1
+let g:neocomplete#use_vimproc = 1
+let g:neocomplete#skip_auto_completion_time = ''
