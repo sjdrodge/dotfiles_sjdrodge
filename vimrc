@@ -46,6 +46,8 @@ set title
 set ruler
 set showcmd
 set number
+set relativenumber
+set cursorline
 
 set backspace=indent,eol,start
 
