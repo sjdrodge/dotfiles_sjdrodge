@@ -137,8 +137,10 @@ inoremap <C-U> <C-G>u<C-U>
 nnoremap <C-s> :w<CR>
 inoremap <C-s> <Esc>:w<CR>
 
-vnoremap <leader>a  :EasyAlign<CR>
-vnoremap <leader><CR>  :LiveEasyAlign<CR>
+nmap <leader>a    <Plug>(EasyAlign)
+vmap <CR>         <Plug>(EasyAlign)
+nmap <leader>A    <Plug>(LiveEasyAlign)
+vmap <leader><CR> <Plug>(LiveEasyAlign)
 
 nmap <C-j> <C-w>j
 nmap <C-k> <C-w>k
