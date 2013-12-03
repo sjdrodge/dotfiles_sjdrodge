@@ -137,7 +137,6 @@ inoremap <C-U> <C-G>u<C-U>
 nnoremap <C-s> :w<CR>
 inoremap <C-s> <Esc>:w<CR>
 
-nnoremap <leader>jd :YcmCompleter GoToDefinitionElseDeclaration<CR>
 vnoremap <leader>a  :EasyAlign<CR>
 vnoremap <leader><CR>  :LiveEasyAlign<CR>
 
