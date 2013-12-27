@@ -17,9 +17,8 @@ vim()
 
 bindkey -v
 
-function venv () {
-source ~/.venv/$1/bin/activate
-}
+export WORKON_HOME=$HOME/.venv
+source `which virtualenvwrapper_lazy.sh`
 
 VLESS=$(find /usr/share/vim -name 'less.sh')
 if [[ ! -z $VLESS ]]; then
