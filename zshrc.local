@@ -4,6 +4,8 @@ fi
 export PATH="$HOME/bin:$HOME/.cabal/bin:$PATH"
 export EDITOR="vim"
 
+alias sudo='sudo '
+
 alias arst='setxkbmap "us"'
 alias asdf='setxkbmap "us(colemak)"'
 
