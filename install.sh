@@ -10,7 +10,7 @@ sourcedir=`pwd -P`
 popd > /dev/null
 
 bkup_dir=~/.dotfiles_bkup
-files="Xresources gitconfig inputrc tmux.conf vim vimrc zlogin zshrc.local"
+files="Xresources gitconfig inputrc oh-my-fish tmux.conf vim vimrc zlogin zshrc.local"
 
 #TODO: test if $BKUP_DIR exists and print what we're doing if it doesn't
 mkdir -p $bkup_dir
