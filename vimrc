@@ -15,6 +15,7 @@ Bundle 'gmarik/vundle'
 
 Bundle 'christoomey/vim-tmux-navigator'
 Bundle 'dag/vim2hs'
+Bundle 'dag/vim-fish'
 Bundle 'eagletmt/ghcmod-vim'
 Bundle 'eagletmt/neco-ghc'
 " Bundle 'Floobits/floobits-vim'
