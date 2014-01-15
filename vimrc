@@ -179,3 +179,8 @@ let g:neocomplete#enable_at_startup = 1
 let g:neocomplete#enable_fuzzy_completion = 1
 let g:neocomplete#use_vimproc = 1
 let g:neocomplete#skip_auto_completion_time = ''
+
+if exists("vimpager")
+  let g:indent_guides_enable_on_vim_startup = 0
+  set laststatus=1
+endif
