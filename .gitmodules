@@ -4,3 +4,6 @@
 [submodule "oh-my-fish"]
 	path = oh-my-fish
 	url = https://github.com/bpinto/oh-my-fish.git
+[submodule "virtualfish"]
+	path = virtualfish
+	url = https://github.com/adambrenecki/virtualfish.git
