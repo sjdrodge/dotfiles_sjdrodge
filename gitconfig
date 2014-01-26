@@ -9,3 +9,6 @@
 	default = simple
 [merge]
 	toll = vimdiff
+[alias]
+	lol = log --oneline --graph --decorate
+	st = status -s
