@@ -12,3 +12,4 @@
 [alias]
 	lol = log --oneline --graph --decorate
 	st = status -s
+	dc = diff --cached
