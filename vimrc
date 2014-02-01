@@ -172,8 +172,6 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_error_symbol='✗'
 let g:syntastic_warning_symbol='!'
 
-let g:ycm_allow_changing_updatetime = 0
-
 let g:haskell_conceal_enumerations = 0
 " let g:haskell_conceal_wide = 1
 
