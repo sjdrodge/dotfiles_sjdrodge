@@ -13,6 +13,7 @@ call vundle#rc()
 
 Bundle 'gmarik/vundle'
 
+Bundle 'altercation/vim-colors-solarized'
 Bundle 'christoomey/vim-tmux-navigator'
 Bundle 'dag/vim2hs'
 Bundle 'dag/vim-fish'
@@ -35,7 +36,7 @@ Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-repeat'
 Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-unimpaired'
-Bundle 'trapd00r/neverland-vim-theme'
+" Bundle 'trapd00r/neverland-vim-theme'
 
 filetype plugin indent on
 
@@ -98,7 +99,8 @@ set undolevels=700
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 syntax on
 
-colorscheme neverland
+set background=dark
+colorscheme solarized
 
 set t_Co=256
 set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ 9
@@ -164,8 +166,8 @@ let g:ctrlp_cmd = 'CtrlPMixed'
 let g:indent_guides_enable_on_vim_startup = 1
 let g:indent_guides_guide_size = 1
 let g:indent_guides_auto_colors = 0
-autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  ctermbg=237
-autocmd VimEnter,Colorscheme * :hi IndentGuidesEven ctermbg=239
+autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  ctermbg=23
+autocmd VimEnter,Colorscheme * :hi IndentGuidesEven ctermbg=0
 
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_always_populate_loc_list = 1
