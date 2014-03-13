@@ -2,7 +2,7 @@
 " => Prelude
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set nocompatible
-autocmd! bufwritepost .vimrc source %
+autocmd! bufwritepost .vimrc nested source %
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Plugins via Vundle
