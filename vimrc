@@ -152,6 +152,8 @@ nmap <C-k> <C-w>k
 nmap <C-h> <C-w>h
 nmap <C-l> <C-w>l
 
+nnoremap <leader>h :nohl<CR>
+
 " Relies on vim-eunuch
 cmap w!! SudoWrite
 
