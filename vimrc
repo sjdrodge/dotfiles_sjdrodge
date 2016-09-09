@@ -135,9 +135,9 @@ endif
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set pastetoggle=<F2>
 
-" CTRL-U in insert mode deletes a lot.  Use CTRL-G u to first break undo,
-" so that you can undo CTRL-U after inserting a line break.
+" Automatic undo sequence breaks
 inoremap <C-U> <C-G>u<C-U>
+inoremap <CR> <C-G>u<CR>
 
 nnoremap <C-s> :update<CR>
 inoremap <C-s> <Esc>:update<CR>
