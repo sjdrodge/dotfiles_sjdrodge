@@ -14,6 +14,7 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 
 Bundle 'altercation/vim-colors-solarized'
+Bundle 'AnsiEsc.vim'
 Bundle 'christoomey/vim-sort-motion'
 Bundle 'christoomey/vim-tmux-navigator'
 Bundle 'dag/vim2hs'
