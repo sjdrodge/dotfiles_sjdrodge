@@ -115,13 +115,11 @@ set textwidth=0
 set lbr
 set display=lastline
 
-set tabstop=2
-set softtabstop=2
-set shiftwidth=2
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
 set shiftround
 set expandtab
-
-au Filetype haskell setl ts=4 sw=4 sts=4
 
 if ! exists("vimpager")
   highlight ExtraWhitespace ctermbg=red guibg=red
