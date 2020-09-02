@@ -5,40 +5,39 @@ set nocompatible
 autocmd! bufwritepost .vimrc nested source %
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Plugins via Vundle
+" => Plugins via vim-plug
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 filetype off
-set rtp+=~/.vim/bundle/vundle
-call vundle#rc()
+call plug#begin('~/.vim/plugged')
 
-Bundle 'gmarik/vundle'
+Plug 'altercation/vim-colors-solarized'
+Plug 'christoomey/vim-sort-motion'
+Plug 'christoomey/vim-tmux-navigator'
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'dag/vim2hs'
+Plug 'dag/vim-fish'
+Plug 'eagletmt/ghcmod-vim'
+Plug 'eagletmt/neco-ghc'
+Plug 'idris-hackers/idris-vim'
+Plug 'junegunn/vim-easy-align'
+Plug 'kana/vim-niceblock'
+Plug 'nathanaelkane/vim-indent-guides'
+Plug 'rust-lang/rust.vim'
+Plug 'scrooloose/syntastic'
+Plug 'Shougo/neocomplete.vim'
+Plug 'Shougo/vimproc.vim'
+Plug 'terryma/vim-multiple-cursors'
+Plug 'tomtom/tcomment_vim'
+Plug 'tpope/vim-abolish'
+Plug 'tpope/vim-eunuch'
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-repeat'
+Plug 'tpope/vim-surround'
+Plug 'tpope/vim-unimpaired'
+Plug 'vim-scripts/AnsiEsc.vim'
+Plug 'xolox/vim-misc'
 
-Bundle 'altercation/vim-colors-solarized'
-Bundle 'AnsiEsc.vim'
-Bundle 'christoomey/vim-sort-motion'
-Bundle 'christoomey/vim-tmux-navigator'
-Bundle 'dag/vim2hs'
-Bundle 'dag/vim-fish'
-Bundle 'eagletmt/ghcmod-vim'
-Bundle 'eagletmt/neco-ghc'
-" Bundle 'Floobits/floobits-vim'
-Bundle 'idris-hackers/idris-vim'
-Bundle 'junegunn/vim-easy-align'
-Bundle 'kana/vim-niceblock'
-Bundle 'ctrlpvim/ctrlp.vim'
-Bundle 'nathanaelkane/vim-indent-guides'
-Bundle 'scrooloose/syntastic'
-Bundle 'Shougo/neocomplete.vim'
-Bundle 'Shougo/vimproc.vim'
-Bundle 'terryma/vim-multiple-cursors'
-Bundle 'tomtom/tcomment_vim'
-Bundle 'tpope/vim-abolish'
-Bundle 'tpope/vim-eunuch'
-Bundle 'tpope/vim-fugitive'
-Bundle 'tpope/vim-repeat'
-Bundle 'tpope/vim-surround'
-Bundle 'tpope/vim-unimpaired'
-" Bundle 'trapd00r/neverland-vim-theme'
+call plug#end()
 
 filetype plugin indent on
 
@@ -160,7 +159,7 @@ cmap w!! SudoWrite
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Plugins and utilities
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-set shell=bash
+set shell=zsh
 set grepprg=ag
 
 let g:ctrlp_cmd = 'CtrlPMixed'
@@ -177,6 +176,10 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_check_on_wq = 0
 let g:syntastic_error_symbol='✗'
 let g:syntastic_warning_symbol='!'
+
+let g:syntastic_c_checkers = ['gcc', 'cppcheck']
+let g:syntastic_rust_checkers = ['cargo']
+
 
 let g:haskell_conceal_enumerations = 0
 " let g:haskell_conceal_wide = 1
