@@ -41,31 +41,3 @@
 *color14:                 S_base1
 *color15:                 S_base3
 
-Xft.autohint: 0
-Xft.lcdfilter: lcddefault
-Xft.rgba: rgb
-Xft.hinting: 1
-Xft.hintstyle: hintfull
-Xft.antialias: 1
-
-
-URxvt.depth: 32
-URxvt.font:xft:DejaVu Sans Mono for Powerline:pixelsize=12
-
-URxvt.internalBorder:0
-URxvt.scrollBar: off
-URxvt.urgentOnBell: true
-URxvt.visualBell: true
-
-URxvt.saveLines:10000
-
-URxvt.perl-ext-common: default,matcher
-URxvt.url-launcher: google-chrome
-URxvt.matcher.button: 1
-
-
-XTerm*termName: xterm-256color
-XTerm*locale: true
-
-XTerm*faceName: DejaVu Sans Mono for Powerline:size=9
-XTerm*bellIsUgrent: true
