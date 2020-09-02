@@ -1,6 +1,0 @@
-Installation instructions:
-1. git submodule init
-2. git submodule update
-3. ./install.sh
-4. Open vim and run :BundleInstall
-5. Follow instructions for post-installation setup for bundles that require it
