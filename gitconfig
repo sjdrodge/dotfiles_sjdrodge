@@ -13,3 +13,5 @@
 	lol = log --oneline --graph --decorate
 	st = status -s
 	dc = diff --cached
+[pull]
+	ff = only
