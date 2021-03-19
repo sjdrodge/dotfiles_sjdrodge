@@ -19,19 +19,14 @@ Plug 'altercation/vim-colors-solarized'
 Plug 'christoomey/vim-sort-motion'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'ctrlpvim/ctrlp.vim'
-Plug 'dag/vim2hs'
-Plug 'dag/vim-fish'
-Plug 'eagletmt/ghcmod-vim'
+Plug 'dense-analysis/ale'
 Plug 'eagletmt/neco-ghc'
-Plug 'idris-hackers/idris-vim'
+Plug 'editorconfig/editorconfig-vim'
+Plug 'itchyny/lightline.vim'
 Plug 'junegunn/vim-easy-align'
 Plug 'kana/vim-niceblock'
 Plug 'nathanaelkane/vim-indent-guides'
-Plug 'rust-lang/rust.vim'
-Plug 'scrooloose/syntastic'
-Plug 'Shougo/neocomplete.vim'
-Plug 'Shougo/vimproc.vim'
-Plug 'terryma/vim-multiple-cursors'
+Plug 'sheerun/vim-polyglot'
 Plug 'tomtom/tcomment_vim'
 Plug 'tpope/vim-abolish'
 Plug 'tpope/vim-eunuch'
@@ -40,9 +35,14 @@ Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-unimpaired'
 Plug 'vim-scripts/AnsiEsc.vim'
-Plug 'xolox/vim-misc'
+
+if has('nvim')
+  Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+  Plug 'tbodt/deoplete-tabnine', { 'do': './install.sh' }
+endif
 
 call plug#end()
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => User interface
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -162,7 +162,9 @@ cmap w!! SudoWrite
 " => Plugins and utilities
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set shell=zsh
-set grepprg=ag
+if executable('rg')
+    set grepprg=rg
+endif
 
 let g:ctrlp_cmd = 'CtrlPMixed'
 
@@ -173,25 +175,16 @@ let g:indent_guides_auto_colors = 0
 autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  ctermbg=23
 autocmd VimEnter,Colorscheme * :hi IndentGuidesEven ctermbg=0
 
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_check_on_wq = 0
-let g:syntastic_error_symbol='✗'
-let g:syntastic_warning_symbol='!'
+let g:ale_fixers = {
+\   'rust': ['rustfmt'],
+\}
 
-let g:syntastic_c_checkers = ['gcc', 'cppcheck']
-let g:syntastic_rust_checkers = ['cargo']
-
+let g:ale_fix_on_save = 1
 
 let g:haskell_conceal_enumerations = 0
 " let g:haskell_conceal_wide = 1
 
-let g:neocomplete#enable_at_startup = 1
-let g:neocomplete#enable_fuzzy_completion = 1
-let g:neocomplete#use_vimproc = 1
-let g:neocomplete#skip_auto_completion_time = ''
-
-let g:powerline_pycmd = 'py3'
+let g:deoplete#enable_at_startup = 1
 
 if exists("vimpager")
   let g:indent_guides_enable_on_vim_startup = 0
