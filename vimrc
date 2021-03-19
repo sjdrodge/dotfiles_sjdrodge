@@ -148,10 +148,10 @@ vmap <CR>         <Plug>(EasyAlign)
 nmap <leader>A    <Plug>(LiveEasyAlign)
 vmap <leader><CR> <Plug>(LiveEasyAlign)
 
-nmap <C-j> <C-w>j
-nmap <C-k> <C-w>k
-nmap <C-h> <C-w>h
-nmap <C-l> <C-w>l
+" nmap <C-j> <C-w>j
+" nmap <C-k> <C-w>k
+" nmap <C-h> <C-w>h
+" nmap <C-l> <C-w>l
 
 nnoremap <leader>h :nohl<CR>
 
