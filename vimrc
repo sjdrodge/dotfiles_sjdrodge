@@ -15,30 +15,31 @@ endif
 
 call plug#begin('~/.vim/plugged')
 
-Plug 'altercation/vim-colors-solarized'
 Plug 'christoomey/vim-sort-motion'
-Plug 'christoomey/vim-tmux-navigator'
-Plug 'ctrlpvim/ctrlp.vim'
-Plug 'dense-analysis/ale'
-Plug 'eagletmt/neco-ghc'
-Plug 'editorconfig/editorconfig-vim'
-Plug 'itchyny/lightline.vim'
 Plug 'junegunn/vim-easy-align'
 Plug 'kana/vim-niceblock'
-Plug 'nathanaelkane/vim-indent-guides'
-Plug 'sheerun/vim-polyglot'
 Plug 'tomtom/tcomment_vim'
-Plug 'tpope/vim-abolish'
 Plug 'tpope/vim-eunuch'
-Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-unimpaired'
-Plug 'vim-scripts/AnsiEsc.vim'
 
-if has('nvim')
-  Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-  Plug 'tbodt/deoplete-tabnine', { 'do': './install.sh' }
+if !exists('g:vscode')
+  Plug 'altercation/vim-colors-solarized'
+  Plug 'christoomey/vim-tmux-navigator'
+  Plug 'ctrlpvim/ctrlp.vim'
+  Plug 'dense-analysis/ale'
+  Plug 'eagletmt/neco-ghc'
+  Plug 'editorconfig/editorconfig-vim'
+  Plug 'itchyny/lightline.vim'
+  Plug 'nathanaelkane/vim-indent-guides'
+  Plug 'sheerun/vim-polyglot'
+  Plug 'vim-scripts/AnsiEsc.vim'
+
+  if has('nvim')
+    Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+    Plug 'tbodt/deoplete-tabnine', { 'do': './install.sh' }
+  endif
 endif
 
 call plug#end()
@@ -177,6 +178,13 @@ autocmd VimEnter,Colorscheme * :hi IndentGuidesEven ctermbg=0
 
 let g:ale_fixers = {
 \   'rust': ['rustfmt'],
+\   'javascript': ['prettier'],
+\   'typescript': ['prettier'],
+\   'typescriptreact': ['prettier'],
+\   'css': ['prettier'],
+\   'scss': ['prettier'],
+\   'json': ['prettier'],
+\   'jsonc': ['prettier'],
 \}
 
 let g:ale_fix_on_save = 1
