@@ -8,10 +8,19 @@
 [push]
 	default = simple
 [merge]
-	toll = vimdiff
+	tool = nvimdiff
 [alias]
 	lol = log --oneline --graph --decorate
 	st = status -s
 	dc = diff --cached
 [pull]
 	ff = only
+[pager]
+    diff = delta
+    log = delta
+    reflog = delta
+    show = delta
+[interactive]
+    diffFilter = delta --color-only --features=interactive
+[delta]
+    syntax-theme = Solarized (dark)
