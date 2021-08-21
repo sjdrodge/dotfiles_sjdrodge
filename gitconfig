@@ -24,3 +24,5 @@
     diffFilter = delta --color-only --features=interactive
 [delta]
     syntax-theme = Solarized (dark)
+[init]
+	defaultBranch = main
